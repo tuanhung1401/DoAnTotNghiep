@@ -1,20 +1,29 @@
 package model;
 
+import constants.Type;
+
 public class Account {
-    private String nameAccount;
+    private String userName;
     private String password;
 
-    public Account(String nameAccount, String password) {
-        this.nameAccount = nameAccount;
+    private Type type;
+
+
+    public Account() {
+    }
+
+    public Account(String userName, String password, Type type) {
+        this.userName = userName;
         this.password = password;
+        this.type = type;
     }
 
-    public String getNameAccount() {
-        return nameAccount;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setNameAccount(String nameAccount) {
-        this.nameAccount = nameAccount;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -23,5 +32,13 @@ public class Account {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
     }
 }
