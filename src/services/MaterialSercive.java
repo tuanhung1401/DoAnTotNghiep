@@ -1,6 +1,8 @@
 package services;
 
+import constants.Type;
 import database.DataBase;
+import model.Employee;
 import model.Inventory;
 import model.Material;
 import model.Storage;
@@ -24,7 +26,7 @@ public class MaterialSercive implements IService{
             }
             switch (choose){
                 case 1:
-                    showInputMaterial();
+                    showAdd();
                     break;
                 case 2:
                     showOutMaterial();
@@ -41,6 +43,12 @@ public class MaterialSercive implements IService{
             }
         }
     }
+
+    @Override
+    public void detelet() {
+
+    }
+
 
     private void showOutList() {
         ///
@@ -62,7 +70,7 @@ public class MaterialSercive implements IService{
         }
     }
 
-    private void showInputMaterial() {
+    public void showAdd() {
         System.out.println("Tên vật liệu");
         String nameMaterial = InputValue.getString();
         System.out.println("Nhập Model");
@@ -76,8 +84,8 @@ public class MaterialSercive implements IService{
         String nameNhanVien = InputValue.getEmployee(idNhanVien);
         System.out.println("Ngày Nhập");
         LocalDate dateAdd = InputValue.getInputLocalDate();
-        Storage storage = new Storage(nameMaterial,nameModel,number,nameVendor);
         Inventory inventory = new Inventory(idNhanVien,nameNhanVien);
+        Storage storage = new Storage(nameMaterial,nameModel,number,nameVendor);
         Material material = new Material(inventory,storage,dateAdd);
         DataBase.materialList.add(material);
         DataBase.materiaExistlList.add(material);

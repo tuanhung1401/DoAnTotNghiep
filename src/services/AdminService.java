@@ -44,10 +44,10 @@ public class AdminService implements IService{
             }
             switch (choose){
                 case 1:
-                    addAccount();
+                    showAdd();
                     break;
                 case 2:
-                    deteleAccount();
+                    detelet();
                     break;
                 case 3:
                     changePassword();
@@ -77,7 +77,7 @@ public class AdminService implements IService{
         }
     }
 
-    private void deteleAccount() {
+    public void detelet() {
         System.out.println("Nhập tài khoản cần xóa ");
         String userName = InputValue.getString();
         boolean ketQuaCheckAcc = InputValue.checkAccount(userName);
@@ -97,7 +97,7 @@ public class AdminService implements IService{
     }
 
 
-    public void addAccount(){
+    public void showAdd(){
         System.out.println("Nhập ID nhân viên");
         String userName = InputValue.getString();
         System.out.println("Nhập Mật Khẩu");

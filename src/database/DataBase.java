@@ -1,10 +1,7 @@
 package database;
 
 import constants.Type;
-import model.Account;
-import model.Customer;
-import model.Employee;
-import model.Material;
+import model.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +19,12 @@ public class DataBase {
     public static List<Material> materiaExistlList = new ArrayList<>();
     // danh sách hàng xuất kho(khi lấy vật liệu danh sách lấy sẽ được lưu vào đây và remove ở materialExistList)
     //...............danh sách ở đây chưa tạo
+    // danh sách hóa đơn
+    public static List<Invoice> invoiceList = new ArrayList<>();
+    // danh sách lịch sử lỗi
+    public static List<History> historyList = new ArrayList<>();
+
+
     static {
         Account admin = new Account();
         admin.setUserName("admin");

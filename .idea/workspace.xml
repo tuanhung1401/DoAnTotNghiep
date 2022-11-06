@@ -15,16 +15,19 @@
       <change afterPath="$PROJECT_DIR$/src/model/Account.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/model/Customer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/History.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/model/Inventory.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/model/Invoice.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/model/Material.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Receptionist.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/model/Storage.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/run/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/services/AdminService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/services/IService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/services/Login.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/services/MaterialSercive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/ReceptionistService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/utils/InputValue.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/validation/Authentication.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/validation/Authorization.java" afterDir="false" />
@@ -38,8 +41,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,7 +63,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "F:/BT/DoAnTotNghiep"
+    "last_opened_file_path": "F:/slide html/DoAnTotNghiep (3)/DoAnTotNghiep"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
