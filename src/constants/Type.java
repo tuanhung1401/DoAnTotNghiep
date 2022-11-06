@@ -1,5 +1,5 @@
 package constants;
-
+// loại hình nhân viên
 public enum Type {
     NHANVIENLETAN ("Nhân viên lễ tân"),
     NHANVIENWIP ("Nhân viên WIP"),

@@ -9,7 +9,7 @@ import utils.InputValue;
 import java.util.Iterator;
 import java.util.Scanner;
 
-public class AdminService {
+public class AdminService implements IService{
 
 
     public void showFunction(){
@@ -110,14 +110,13 @@ public class AdminService {
 
     private Type checkType(){
         Type type = null;
-        System.out.println("1. Nhân Viên Lễ Tân" +
-                "2. Nhân viên WIP" +
-                "3. Nhân Viên sửa chữa Font" +
-                "4. Nhân viên sửa chữa phần mềm" +
-                "5. Nhân viên sửa chữa PBA" +
-                "6. Nhân viên Kho" +
-                "7. Quản lý" +
-                "8. Admin");
+        System.out.println("1. Nhân Viên Lễ Tân " +
+                "2. Nhân viên WIP " +
+                "3. Nhân Viên sửa chữa Font " +
+                "4. Nhân viên sửa chữa phần mềm " +
+                "5. Nhân viên sửa chữa PBA " +
+                "6. Nhân viên Kho " +
+                "7. Quản lý ");
         int choose = InputValue.getInt(1, 7);
         switch (choose){
             case 1:
@@ -141,8 +140,6 @@ public class AdminService {
             case 7:
                 type = Type.QUANLY;
                 break;
-            case 8:
-                type = Type.ADMIN;
         }
         return type;
     }
