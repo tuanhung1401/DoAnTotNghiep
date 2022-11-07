@@ -17,16 +17,17 @@ public class Login {
             String account = InputValue.getString();
             System.out.println("Nhập mật khẩu");
             String password = InputValue.getString();
-
             if (DataBase.accountsList.isEmpty()) {
                 System.err.println("Chưa có tài khoản nào. Mời bạn đăng ký trước");
                 break;
             }
+
             Account acc = authentication.login(account, password);
 
             if (acc == null) {
                 System.out.println("Bạn đã nhập sai tài khoản hoặc mật khẩu!!! vui lòng nhập lại ");
             } else {
+                DataBase.employee = InputValue.getOneEmployee(account);
                 authorization.authorize(acc);
             }
         }

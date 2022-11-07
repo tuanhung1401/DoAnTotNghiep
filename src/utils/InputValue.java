@@ -4,6 +4,8 @@ import constants.Type;
 import database.DataBase;
 import model.Account;
 import model.Employee;
+import model.Invoice;
+import model.InvoiceMaterial;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -88,5 +90,60 @@ public class InputValue {
             }
         }
         return null;
+    }
+
+    public static double getInputDouble() {
+        double price;
+        try {
+            price = Double.parseDouble(sc.nextLine());
+        } catch (Exception ex) {
+            System.out.println("Nhập không đúng. Vui Lòng nhập lại");
+            return getInputDouble();
+        }
+        return price;
+    }
+
+    public static Employee getOneEmployee(String account) {
+        for (Employee employee : DataBase.employeeList){
+            if (employee.getIdNhanVien().equals(account)){
+                return employee;
+            }
+        }
+        return null;
+    }
+
+    public static String getIDEmployee() {
+        System.out.println("Nhập ID Nhân viên");
+        String idNhanVien = getString();
+        for (Employee employee : DataBase.employeeList){
+            if (employee.getIdNhanVien().equals(idNhanVien)){
+                String codeEmployee = employee.getIdNhanVien();
+                return codeEmployee;
+            }
+        }
+        return getIDEmployee();
+    }
+
+    public static String checkGetEmployee() {
+        System.out.println("Nhập ID nhân viên");
+        String idNhanVien = getString();
+        for (Employee employee : DataBase.employeeList){
+            if (employee.getIdNhanVien().equals(idNhanVien)){
+                System.out.println("ID nhân viên đã tồn tại");
+                return checkGetEmployee();
+            }
+        }
+        return idNhanVien;
+    }
+
+    public static String checkGetCodeInvoiceMaterial() {
+        String codeInvoice = getString();
+        for (InvoiceMaterial material : DataBase.historyInputInvoiceMaterialList){
+            if (material.getCodeMaterial().equals(codeInvoice)){
+                System.out.println("Code đã tồn tại");
+                return checkGetCodeInvoiceMaterial();
+            }
+        }
+        return codeInvoice;
     }
 }

@@ -98,8 +98,7 @@ public class AdminService implements IService{
 
 
     public void showAdd(){
-        System.out.println("Nhập ID nhân viên");
-        String userName = InputValue.getString();
+        String userName = InputValue.getIDEmployee();
         System.out.println("Nhập Mật Khẩu");
         String password = InputValue.getString();
         System.out.println("Nhập loại nhân viên");
@@ -265,8 +264,7 @@ public class AdminService implements IService{
     }
 
     private void addEmployee() {
-        System.out.println("Nhập ID nhân viên");
-        String idNhanVien = InputValue.getString();
+        String idNhanVien = InputValue.checkGetEmployee();
         System.out.println("Nhập Họ và Tên Nhân viên");
         String fullNameNhanVien = InputValue.getString();
         System.out.println("Nhập loại nhân viên");

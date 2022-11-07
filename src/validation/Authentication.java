@@ -3,6 +3,7 @@ package validation;
 import database.DataBase;
 import model.Account;
 import model.Employee;
+import model.History;
 
 import java.util.List;
 

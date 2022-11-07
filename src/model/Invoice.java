@@ -12,9 +12,9 @@ public class Invoice {
     private double price;
     private LocalDate dateAdd;
     private LocalDate datePay;
-    private Receptionist receptionist;
+    private Employee employee;
 
-    public Invoice(String codeInvoive, Customer customer, Product product, int number, double price, LocalDate dateAdd, LocalDate datePay, Receptionist receptionist) {
+    public Invoice(String codeInvoive, Customer customer, Product product, int number, double price, LocalDate dateAdd, LocalDate datePay, Employee employee) {
         this.codeInvoive = codeInvoive;
         this.customer = customer;
         this.product = product;
@@ -22,7 +22,7 @@ public class Invoice {
         this.price = price;
         this.dateAdd = dateAdd;
         this.datePay = datePay;
-        this.receptionist = receptionist;
+        this.employee = employee;
     }
 
 
@@ -82,11 +82,11 @@ public class Invoice {
         this.datePay = datePay;
     }
 
-    public Receptionist getReceptionist() {
-        return receptionist;
+    public Employee getEmployee() {
+        return employee;
     }
 
-    public void setReceptionist(Receptionist receptionist) {
-        this.receptionist = receptionist;
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 }
