@@ -40,4 +40,10 @@ public class Employee {
     public void setType(Type type) {
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        System.out.printf("ID Nhân Viên: %-10s  -  Họ và Tên: %-20s  -  Loại: %-20s  -   ",idNhanVien,fullName,type);
+        return "";
+    }
 }

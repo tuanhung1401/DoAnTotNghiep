@@ -2,20 +2,12 @@ package model;
 
 import java.time.LocalDate;
 
-public class InvoiceMaterial {
-
+public class InvoiceMaterial extends Material{
     private String codeMaterial;
-    private String nameMaterial;
-    private int amount;
-    private LocalDate dayInvoice;
-    private Employee employee;
 
-    public InvoiceMaterial(String codeMaterial, String nameMaterial, int amount, LocalDate dayInvoice, Employee employee) {
+    public InvoiceMaterial(String codeMaterial, String idMaterial, String nameMaterial, int amount, LocalDate dayInvoice, Employee employee) {
+        super(idMaterial, nameMaterial, amount, dayInvoice, employee);
         this.codeMaterial = codeMaterial;
-        this.nameMaterial = nameMaterial;
-        this.amount = amount;
-        this.dayInvoice = dayInvoice;
-        this.employee = employee;
     }
 
     public String getCodeMaterial() {
@@ -26,27 +18,10 @@ public class InvoiceMaterial {
         this.codeMaterial = codeMaterial;
     }
 
-    public String getNameMaterial() {
-        return nameMaterial;
-    }
-
-    public void setNameMaterial(String nameMaterial) {
-        this.nameMaterial = nameMaterial;
-    }
-
-    public int getAmount() {
-        return amount;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-
-    public LocalDate getDayInvoice() {
-        return dayInvoice;
-    }
-
-    public void setDayInvoice(LocalDate dayInvoice) {
-        this.dayInvoice = dayInvoice;
+    @Override
+    public String toString() {
+        super.toString();
+        System.out.printf("  -  Code Hóa đơn: %-15s",codeMaterial);
+        return "";
     }
 }

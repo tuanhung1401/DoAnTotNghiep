@@ -3,6 +3,7 @@ package database;
 import constants.Type;
 import model.*;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,22 +16,20 @@ public class DataBase {
     public static List<Product> productList = new ArrayList<>();
     // danh sách tài khoản
     public static List<Account> accountsList = new ArrayList<>();
-    // danh sách vật liệu nhập kho
-
-    // danh sách vật liệu tồn kho(khi lấy sẽ remove ở danh sách này còn lại sẽ là hàng tồn)
-
-    // danh sách hàng xuất kho(khi lấy vật liệu danh sách lấy sẽ được lưu vào đây và remove ở materialExistList)
-    //...............danh sách ở đây chưa tạo
     // danh sách hóa đơn
     public static List<Invoice> invoiceList = new ArrayList<>();
     // danh sách lịch sử lỗi
     public static List<History> historyList = new ArrayList<>();
-    // danh sách hóa đơn oder vật liệu
+    // danh sách hóa đơn oder vật liệu của Fuction
     public static List<InvoiceMaterial> inputInvoiceMaterialList = new ArrayList<>();
-    // danh sách hóa đơn xuât vật liệu
+    // history xuất vật liệu của nhân viên kho cho function
     public static List<InvoiceMaterial> historyOutMaterialList = new ArrayList<>();
+    // danh sách history Oder vật liệu của Funcion
     public static List<InvoiceMaterial> historyInputInvoiceMaterialList = new ArrayList<>();
-    public static List<InvoiceMaterial> importMaterialList = new ArrayList<>();
+    // List danh sách vật liệu nhập vào kho và lịch sử nhập kho
+    public static List<Material> historyImportMaterialList = new ArrayList<>();
+    // danh sách hàng tồn trong kho
+    public static List<Material> inventoryMaterialList = new ArrayList<>();
 
 
     static {
@@ -39,6 +38,7 @@ public class DataBase {
         admin.setPassword("admin");
         admin.setType(Type.ADMIN);
         accountsList.add(admin);
+
     }
     public static Employee employee;
 }

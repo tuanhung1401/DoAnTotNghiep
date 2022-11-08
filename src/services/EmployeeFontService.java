@@ -18,8 +18,9 @@ public class EmployeeFontService implements IService {
         while (true) {
             System.out.println("1. Output Product");
             System.out.println("2. Seach History Product");
+            System.out.println("3. Oder Vật liệu");
             System.out.println("0. Quay lại");
-            int choose = InputValue.getInt(1, 2);
+            int choose = InputValue.getInt(1, 3);
             if (choose == 0) {
                 DataBase.employee = null;
                 break;
@@ -30,6 +31,9 @@ public class EmployeeFontService implements IService {
                     break;
                 case 2:
                     searchHistoryProduct();
+                    break;
+                case 3:
+                    showOderMaterial();
                     break;
             }
         }
@@ -188,13 +192,15 @@ public class EmployeeFontService implements IService {
     private void createInvoiceMaterial() {
         System.out.println("Nhập code hóa đơn");
         String codeInvoice = InputValue.checkGetCodeInvoiceMaterial();
+        System.out.println("Nhập ID Vật liệu");
+        String idMaterial = InputValue.getIDMaterial();
         System.out.println("Nhập tên vật liệu");
         String nameMaterial = InputValue.getString();
         System.out.println("Nhập số lượng");
         int amount = InputValue.getInputInt();
         LocalDate dayOder = LocalDate.now();
         Employee employee = DataBase.employee;
-        InvoiceMaterial  invoiceMaterial = new InvoiceMaterial(codeInvoice,nameMaterial,amount,dayOder,employee);
+        InvoiceMaterial  invoiceMaterial = new InvoiceMaterial(codeInvoice,idMaterial,nameMaterial,amount,dayOder,employee);
         DataBase.inputInvoiceMaterialList.add(invoiceMaterial);
         DataBase.historyInputInvoiceMaterialList.add(invoiceMaterial);
     }

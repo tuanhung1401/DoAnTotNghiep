@@ -190,13 +190,15 @@ public class EmployeeSoftwareService implements IService{
     private void createInvoiceMaterial() {
         System.out.println("Nhập code hóa đơn");
         String codeInvoice = InputValue.checkGetCodeInvoiceMaterial();
+        System.out.println("Nhập ID Vật liệu");
+        String idMaterial = InputValue.getIDMaterial();
         System.out.println("Nhập tên vật liệu");
         String nameMaterial = InputValue.getString();
         System.out.println("Nhập số lượng");
         int amount = InputValue.getInputInt();
         LocalDate dayOder = LocalDate.now();
         Employee employee = DataBase.employee;
-        InvoiceMaterial  invoiceMaterial = new InvoiceMaterial(codeInvoice,nameMaterial,amount,dayOder,employee);
+        InvoiceMaterial  invoiceMaterial = new InvoiceMaterial(codeInvoice,idMaterial,nameMaterial,amount,dayOder,employee);
         DataBase.inputInvoiceMaterialList.add(invoiceMaterial);
         DataBase.historyInputInvoiceMaterialList.add(invoiceMaterial);
     }

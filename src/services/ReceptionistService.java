@@ -48,7 +48,6 @@ public class ReceptionistService {
             System.out.println("0. quay lại");
             int choose = InputValue.getInt(1, 3);
             if (choose == 0 ){
-                DataBase.employee = null;
                 break;
             }
             switch (choose){
@@ -72,7 +71,6 @@ public class ReceptionistService {
             System.out.println("0. quay lại");
             int choose = InputValue.getInt(1, 3);
             if (choose == 0 ){
-                DataBase.employee = null;
                 break;
             }
             switch (choose){
@@ -96,7 +94,6 @@ public class ReceptionistService {
             System.out.println("0. quay lại");
             int choose = InputValue.getInt(1, 3);
             if (choose == 0 ){
-                DataBase.employee = null;
                 break;
             }
             switch (choose){
@@ -114,7 +111,24 @@ public class ReceptionistService {
     }
 
     private void showInInvoice() {
-        // chưa viết
+        System.out.println("Nhập Code hóa đơn cần In");
+        String codeInvoice = getCodeInvoicePrint();
+        for (Invoice invoice : DataBase.invoiceList){
+            if (invoice.getCodeInvoive().equals(codeInvoice)){
+                System.out.println(invoice.toString());
+            }
+        }
+    }
+
+    private String getCodeInvoicePrint() {
+        String codeInvoice = InputValue.getString();
+        for (Invoice invoice : DataBase.invoiceList){
+            if (invoice.getCodeInvoive().equals(codeInvoice)){
+                return codeInvoice;
+            }
+        }
+        System.out.println("Không tìm thấy hóa đơn.Vui lòng nhập lại");
+        return getCodeInvoicePrint();
     }
 
     private void showTransferProduct() {

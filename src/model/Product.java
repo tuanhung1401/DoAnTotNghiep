@@ -37,4 +37,12 @@ public class Product {
     public void setNameErrol(String nameErrol) {
         this.nameErrol = nameErrol;
     }
+
+    @Override
+    public String toString() {
+        System.out.format("ID Product:  %s ",idProduct);
+        System.out.format("tên:  %s ",nameErrol);
+
+        return "---------------------------------";
+    }
 }

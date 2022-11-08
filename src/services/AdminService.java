@@ -7,7 +7,6 @@ import model.Employee;
 import utils.InputValue;
 
 import java.util.Iterator;
-import java.util.Scanner;
 
 public class AdminService implements IService{
 
@@ -16,9 +15,11 @@ public class AdminService implements IService{
         while (true){
             System.out.println("1. Nhân Viên");
             System.out.println("2. Tài khoản");
+            System.out.println("3. Search History");
             System.out.println("0. Quay lại");
-            int choose = InputValue.getInt(1, 2);
+            int choose = InputValue.getInt(1, 3);
             if (choose == 0){
+                DataBase.employee = null;
                 break;
             }
             switch (choose){
@@ -27,6 +28,8 @@ public class AdminService implements IService{
                     break;
                 case 2:
                     showAccount();
+                    break;
+                case 3:
                     break;
             }
         }

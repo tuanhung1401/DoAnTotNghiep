@@ -18,6 +18,7 @@ public class ManageService implements IService{
             System.out.println("0. Quay lại");
             int choose = InputValue.getInt(1, 3);
             if (choose == 0){
+                DataBase.employee = null;
                 break;
             }
             switch (choose){
@@ -91,9 +92,8 @@ public class ManageService implements IService{
                 "3. Nhân Viên sửa chữa Font " +
                 "4. Nhân viên sửa chữa phần mềm " +
                 "5. Nhân viên sửa chữa PBA " +
-                "6. Nhân viên Kho " +
-                "7. Quản lý ");
-        int choose = InputValue.getInt(1, 7);
+                "6. Nhân viên Kho ");
+        int choose = InputValue.getInt(1, 6);
         switch (choose){
             case 1:
                 type = Type.NHANVIENLETAN;
@@ -112,9 +112,6 @@ public class ManageService implements IService{
                 break;
             case 6:
                 type = Type.NHANVIENKHO;
-                break;
-            case 7:
-                type = Type.QUANLY;
                 break;
         }
         return type;

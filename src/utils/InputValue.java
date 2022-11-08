@@ -2,10 +2,7 @@ package utils;
 
 import constants.Type;
 import database.DataBase;
-import model.Account;
-import model.Employee;
-import model.Invoice;
-import model.InvoiceMaterial;
+import model.*;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -145,5 +142,16 @@ public class InputValue {
             }
         }
         return codeInvoice;
+    }
+
+    public static String getIDMaterial() {
+        String idMaterial = getString();
+        for (Material material : DataBase.historyImportMaterialList){
+            if (material.getIdMaterial().equals(idMaterial)){
+                System.out.println("Vật liệu đã tồn tại trong kho");
+                return getIDMaterial();
+            }
+        }
+        return idMaterial;
     }
 }
