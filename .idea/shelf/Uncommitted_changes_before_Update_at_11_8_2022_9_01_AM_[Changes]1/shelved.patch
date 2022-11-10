@@ -1,0 +1,31 @@
+Index: src/model/History.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/model/History.java b/src/model/History.java
+--- a/src/model/History.java	
++++ b/src/model/History.java	
+@@ -2,4 +2,5 @@
+ 
+ public class History {
+     private Product product;
++
+ }
+Index: src/utils/InputValue.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/utils/InputValue.java b/src/utils/InputValue.java
+--- a/src/utils/InputValue.java	
++++ b/src/utils/InputValue.java	
+@@ -46,7 +46,7 @@
+         }
+         return false;
+     }
+-    // check id nhân viên mới xme đã tồn tại chưa
++    // check id nhân viên mới xem đã tồn tại chưa
+     public static boolean checkEmployeeNew(String newIDNhanVien) {
+         for (Employee employee : DataBase.employeeList){
+             if (employee.getIdNhanVien().equals(newIDNhanVien)){

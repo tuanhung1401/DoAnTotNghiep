@@ -1,0 +1,69 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -2,35 +2,9 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="2a63e7aa-9134-407e-bd55-909e5085673c" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/DoAnTotNghiep.iml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/constants/Status.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/constants/Type.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/database/DataBase.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/model/Account.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/model/Customer.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/model/Employee.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/model/History.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/model/Inventory.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/model/Invoice.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/model/Material.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/model/Product.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/model/Receptionist.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/model/Storage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/run/Main.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/services/AdminService.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/services/IService.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/services/Login.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/services/MaterialSercive.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/services/ReceptionistService.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/utils/InputValue.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/validation/Authentication.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/validation/Authorization.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/model/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/History.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/utils/InputValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/InputValue.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -58,14 +32,14 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "last_opened_file_path": "F:/slide html/DoAnTotNghiep (3)/DoAnTotNghiep"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;F:/slide html/DoAnTotNghiep (3)/DoAnTotNghiep&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">

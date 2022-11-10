@@ -48,7 +48,7 @@ public class InputValue {
         }
         return false;
     }
-    // check id nhân viên mới xme đã tồn tại chưa
+    // check id nhân viên mới xem đã tồn tại chưa
     public static boolean checkEmployeeNew(String newIDNhanVien) {
         for (Employee employee : DataBase.employeeList){
             if (employee.getIdNhanVien().equals(newIDNhanVien)){
